@@ -80,7 +80,7 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="w-full py-5 border-b-slate-400 bg-white shadow-none sticky top-0 z-auto">
+    <Navbar className="w-full py-5 px-10 border-b-slate-400 bg-white shadow-none sticky top-0 z-auto">
       <div className="container mx-auto flex flex-wrap items-center justify-between text-blue-gray-900">
         <NavLink
           to={"/"}
