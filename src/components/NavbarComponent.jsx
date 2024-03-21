@@ -4,7 +4,6 @@ import {
   MobileNav,
   Typography,
   IconButton,
-  Collapse,
 } from "@material-tailwind/react";
 
 import { FaHome, FaPhone, FaProjectDiagram } from "react-icons/fa";
@@ -41,7 +40,7 @@ export const NavbarComponent = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium "
+        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium "
       >
         <FaHome className="text-xl" />
 
@@ -53,7 +52,7 @@ export const NavbarComponent = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
+        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
         <FaPhone className="text-xl" />
         <a href="#" className="flex items-center">
@@ -65,21 +64,21 @@ export const NavbarComponent = () => {
         variant="small"
         color="blue-gray"
         onClick={toProjectsScrollHandler}
-        className="flex items-center hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
+        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
         <FaProjectDiagram className="text-xl" />
-        <p className="flex items-center">Project</p>
+        <p className="flex items-center textbl">Project</p>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
+        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
         <HiUserCircle className="text-xl cursor-pointer" />
-        <a href="#" className="flex items-center">
+        <NavLink to={"/about-me"} className="flex items-center">
           About me
-        </a>
+        </NavLink>
       </Typography>
     </ul>
   );
@@ -90,7 +89,7 @@ export const NavbarComponent = () => {
         <NavLink
           to={"/"}
           onClick={nameClickHandler}
-          className="mr-4 cursor-pointer transition hover:text-slate-500 text-2xl font-semibold"
+          className="mr-4 cursor-pointer text-black transition hover:text-slate-500 text-2xl font-semibold"
         >
           Kaung Htet San
         </NavLink>
@@ -105,7 +104,7 @@ export const NavbarComponent = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-6 w-6"
+              className="h-6 w-6 text-black"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth={2}
@@ -119,7 +118,7 @@ export const NavbarComponent = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 text-black"
               fill="none"
               stroke="currentColor"
               strokeWidth={2}
