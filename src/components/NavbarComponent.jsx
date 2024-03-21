@@ -42,9 +42,8 @@ export const NavbarComponent = () => {
         color="blue-gray"
         className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium "
       >
-        <FaHome className="text-xl" />
-
         <NavLink to={"/"} className="flex items-center">
+          <FaHome className="text-xl mx-1" />
           Home
         </NavLink>
       </Typography>
@@ -54,10 +53,10 @@ export const NavbarComponent = () => {
         color="blue-gray"
         className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
-        <FaPhone className="text-xl" />
-        <a href="#" className="flex items-center">
+        <NavLink to={"/"} className="flex items-center">
+          <FaPhone className="text-xl mx-1" />
           Contact
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -67,7 +66,7 @@ export const NavbarComponent = () => {
         className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
         <FaProjectDiagram className="text-xl" />
-        <p className="flex items-center textbl">Project</p>
+        <p className="flex items-center textbl">Projects</p>
       </Typography>
       <Typography
         as="li"
@@ -75,8 +74,8 @@ export const NavbarComponent = () => {
         color="blue-gray"
         className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
-        <HiUserCircle className="text-xl cursor-pointer" />
         <NavLink to={"/about-me"} className="flex items-center">
+          <HiUserCircle className="text-xl cursor-pointer mx-1" />
           About me
         </NavLink>
       </Typography>
