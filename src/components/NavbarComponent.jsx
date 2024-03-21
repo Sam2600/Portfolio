@@ -22,6 +22,12 @@ export const NavbarComponent = () => {
     });
   };
 
+  const toProjectsScrollHandler = () => {
+    document
+      .getElementById("my-project")
+      .scrollIntoView({ top: 0, behavior: "smooth" });
+  };
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -39,9 +45,9 @@ export const NavbarComponent = () => {
       >
         <FaHome className="text-xl" />
 
-        <a href="#" className="flex items-center">
+        <NavLink to={"/"} className="flex items-center">
           Home
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -58,12 +64,11 @@ export const NavbarComponent = () => {
         as="li"
         variant="small"
         color="blue-gray"
+        onClick={toProjectsScrollHandler}
         className="flex items-center hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
       >
         <FaProjectDiagram className="text-xl" />
-        <a href="#my-project" className="flex items-center">
-          Project
-        </a>
+        <p className="flex items-center">Project</p>
       </Typography>
       <Typography
         as="li"

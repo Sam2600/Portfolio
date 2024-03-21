@@ -1,5 +1,5 @@
 import React from "react";
-import home from "../assets/home-img.png";
+import samprofile from "../assets/samprofile.jpg";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 export const IntroBio = () => {
@@ -7,8 +7,12 @@ export const IntroBio = () => {
     <section className="py-5">
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="text-center">
-          <div className="flex justify-center mb-12">
-            <img src={home} alt="Image" />
+          <div className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
+            <img
+              className="object-cover object-center rounded-full h-60 w-60"
+              src={samprofile}
+              alt="profile image"
+            />
           </div>
 
           <h1 className="font-normal text-gray-900 text-4xl leading-none mb-8">

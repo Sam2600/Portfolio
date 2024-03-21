@@ -13,7 +13,7 @@ export const Projects = () => {
       </h1>
       <div class="container max-w-screen-xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-gray-50 p-8 rounded-md shadow border ">
+          <div class="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
             <a
               href="https://movie-nerd-sam2600.vercel.app/"
               target="_blank"
@@ -34,7 +34,7 @@ export const Projects = () => {
             </p>
             <div className="flex items-center justify-between">
               <a
-                href="https://simpuru-ecommerce.vercel.app/"
+                href="https://movie-nerd-sam2600.vercel.app/"
                 target="_blank"
                 class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
               >
@@ -71,16 +71,8 @@ export const Projects = () => {
 
       <div class=" mt-20 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
         <div className="flex justify-center gap-10">
-          <a
-            href="https://www.google.com/search?client=firefox-b-d&q=facebook"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaReact className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />
-          </a>
-          <a href="https://github.com/Sam2600" target="_blank" rel="noreferrer">
-            <FaLaravel className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
-          </a>
+          <FaReact className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />
+          <FaLaravel className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
           <FaDatabase className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
         </div>
       </div>
