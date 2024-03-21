@@ -42,7 +42,7 @@ export const AboutMe = () => {
                     <div className="mt-6 flex flex-wrap gap-4 justify-center">
                       <NavLink
                         to={"/"}
-                        className="bg-blue-500 transition-all duration-150 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                        className="bg-black transition-all duration-150 border hover:border-black hover:bg-white hover:text-black text-white py-2 px-4 rounded"
                       >
                         Contact Me
                       </NavLink>
