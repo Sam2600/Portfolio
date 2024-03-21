@@ -10,7 +10,7 @@ export const WorkExperience = () => {
             {/* w-4/12 */}
             <h1
               id="my-project"
-              class="inline-block pb-3 mb-10 text-4xl font-bold text-gray-900 capitalize border-b-4 border-slate-500"
+              class="inline-block pb-3 mb-10 text-3xl font-semibold text-gray-900 capitalize border-b-4 border-slate-500"
             >
               My career experiences
             </h1>
@@ -24,12 +24,12 @@ export const WorkExperience = () => {
           <div class="space-y-24 w-full">
             {/* w-6/12 */}
             <div class="flex justify-between space-x-6">
-              <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">01</h1>
+              <h1 class="font-normal text-gray-700 text-2xl md:text-3xl">01</h1>
 
               <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
               <div className="w-full">
-                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
+                <h1 class="font-normal text-gray-700 text-2xl md:text-2xl mb-5">
                   Internship Trainee
                 </h1>
 
@@ -52,12 +52,12 @@ export const WorkExperience = () => {
             </div>
 
             <div class="flex space-x-6">
-              <h1 class="font-normal text-gray-700 text-3xl md:text-3xl">02</h1>
+              <h1 class="font-normal text-gray-700 text-2xl md:text-3xl">02</h1>
 
               <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
               <div className="w-full">
-                <h1 class="font-normal text-gray-700 text-3xl md:text-3xl mb-5">
+                <h1 class="font-normal text-gray-700 text-2xl md:text-2xl mb-5">
                   Junior Full Stack Developer
                 </h1>
                 <div className="flex justify-between items-center mb-3">

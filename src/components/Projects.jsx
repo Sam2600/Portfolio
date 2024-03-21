@@ -7,7 +7,7 @@ export const Projects = () => {
     <section className="py-5">
       <h1
         id="my-project"
-        class="inline-block mx-5 pb-3 mb-10 text-4xl font-bold text-gray-900 capitalize border-b-4 border-slate-500"
+        class="inline-block mx-5 pb-3 mb-10 text-3xl font-semibold text-gray-900 capitalize border-b-4 border-slate-500"
       >
         My projects
       </h1>
