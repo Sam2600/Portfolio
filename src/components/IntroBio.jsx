@@ -1,6 +1,6 @@
 import React from "react";
 import home from "../assets/home-img.png";
-import { NavLink } from "react-router-dom";
+import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 export const IntroBio = () => {
   return (
@@ -11,27 +11,35 @@ export const IntroBio = () => {
             <img src={home} alt="Image" />
           </div>
 
-          <h6 className="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">
-            Kaung Htet San
-          </h6>
-
-          <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">
+          <h1 className="font-normal text-gray-900 text-4xl leading-none mb-8">
             Junior Full Stack Developer
           </h1>
 
-          <p className="font-normal text-gray-600 text-md md:text-xl mb-16">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            voluptatem nesciunt ducimus dicta. Sequi alias praesentium provident
-            adipisci voluptas rerum! Recusandae fugit praesentium in ipsa ut
-            ratione laborum quibusdam sed.
+          <p className="font-normal text-gray-600 text-md md:text-xl mb-14">
+            Full-stack developer skilled in Laravel and React, with a strong
+            foundation in OOP and functional programming. Eager to explore new
+            techs and join innovative teams.
           </p>
 
-          <NavLink
-            to={"/"}
-            className="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
-          >
-            Hire me
-          </NavLink>
+          <div class="py-3 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
+            <div className="flex justify-center gap-10">
+              <a
+                href="https://www.google.com/search?client=firefox-b-d&q=facebook"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebook className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />
+              </a>
+              <a
+                href="https://github.com/Sam2600"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+              </a>
+              <FaLinkedin className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

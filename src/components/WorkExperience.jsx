@@ -1,13 +1,17 @@
 import React from "react";
+import bcmm from "../assets/bcmm.jpg";
 
 export const WorkExperience = () => {
   return (
-    <section class="py-10 md:py-16">
+    <section class="py-10 md:py-16 px-4">
       <div class="container max-w-screen-xl mx-auto px-4">
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="mb-10 lg:mb-0">
-            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-              Portfolio
+            <h1
+              id="my-project"
+              class="inline-block pb-3 mb-10 text-4xl font-bold text-gray-900 capitalize border-b-4 border-slate-500"
+            >
+              My career experiences
             </h1>
 
             <p class="font-normal text-gray-500 text-xs md:text-base">
@@ -24,13 +28,26 @@ export const WorkExperience = () => {
 
               <div>
                 <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                  Demo API Generator
+                  Internship Trainee
                 </h1>
 
+                <div className="flex justify-between items-center">
+                  <p>2023-May-03 - 2023-July-31</p>
+                  <img
+                    alt="Brycen Myanmar"
+                    width="50"
+                    height="50"
+                    className="object-cover border rounded-full mr-10"
+                    style={{ color: "transparent" }}
+                    src={bcmm}
+                  />
+                </div>
+
+                <br />
+
                 <p class="font-normal text-gray-500 text-sm md:text-base">
-                  A dummy data free and documented API generator to facilitate{" "}
-                  <br /> the process of testing the front-end portion of
-                  projects.
+                  I started my web development career in Brycen Myanmar <br />{" "}
+                  IT solution company.
                 </p>
               </div>
             </div>
@@ -42,29 +59,25 @@ export const WorkExperience = () => {
 
               <div>
                 <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                  Demo API Generator
+                  Junior Full Stack Developer
                 </h1>
+                <div className="flex justify-between items-center">
+                  <p>2023-July-31 - Current </p>
+                  <img
+                    alt="Brycen Myanmar"
+                    width="50"
+                    height="50"
+                    className="object-cover border rounded-full mr-10"
+                    style={{ color: "transparent" }}
+                    src={bcmm}
+                  />
+                </div>
 
+                <br />
                 <p class="font-normal text-gray-500 text-sm md:text-base">
-                  A dummy data free and documented API generator to facilitate{" "}
-                  <br /> the process of testing the front-end portion of
-                  projects.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex space-x-6">
-              <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">03</h1>
-
-              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-              <div>
-                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                  Demo API Generator
-                </h1>
-
-                <p class="font-normal text-gray-500 text-sm md:text-base">
-                  A dummy data free and documented API generator to facilitate{" "}
+                  After accomplishing my internship, I started my official{" "}
+                  <br />
+                  web developer career at Brycen Myanmar.
                 </p>
               </div>
             </div>

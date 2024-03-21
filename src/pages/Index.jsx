@@ -1,11 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Navbar } from "../components/Navbar";
+import { NavbarComponent } from "../components/NavbarComponent";
 
 export const Index = () => {
   return (
-    <main className="px-5 py-5">
-      <Navbar />
+    <main>
+      <NavbarComponent />
       <Outlet />
     </main>
   );
