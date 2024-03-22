@@ -7,10 +7,13 @@ import {
 } from "@material-tailwind/react";
 
 import { FaHome, FaPhone, FaProjectDiagram } from "react-icons/fa";
+
 import { HiUserCircle } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import ContactComponent from "./ContactComponent";
 
 export const NavbarComponent = () => {
+  //
   const [openNav, setOpenNav] = React.useState(false);
 
   const nameClickHandler = () => {
@@ -26,6 +29,8 @@ export const NavbarComponent = () => {
       .getElementById("my-project")
       .scrollIntoView({ top: 0, behavior: "smooth" });
   };
+
+  const location = useLocation().pathname;
 
   React.useEffect(() => {
     window.addEventListener(
@@ -47,27 +52,27 @@ export const NavbarComponent = () => {
           Home
         </NavLink>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
-      >
-        <NavLink to={"/"} className="flex items-center">
+
+      <ContactComponent>
+        <button className="flex items-center">
           <FaPhone className="text-xl mx-1" />
           Contact
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        onClick={toProjectsScrollHandler}
-        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
-      >
-        <FaProjectDiagram className="text-xl" />
-        <p className="flex items-center textbl">Projects</p>
-      </Typography>
+        </button>
+      </ContactComponent>
+
+      {location !== "/about-me" && (
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          onClick={toProjectsScrollHandler}
+          className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
+        >
+          <FaProjectDiagram className="text-xl" />
+          <p className="flex items-center textbl">Projects</p>
+        </Typography>
+      )}
+
       <Typography
         as="li"
         variant="small"

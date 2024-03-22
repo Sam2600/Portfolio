@@ -14,7 +14,6 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 
 export const AboutMe = () => {
   return (
@@ -40,12 +39,12 @@ export const AboutMe = () => {
                     <h1 className="text-xl font-bold">Kaung Htet San</h1>
                     <p className="text-gray-700">Full Stack Developer</p>
                     <div className="mt-6 flex flex-wrap gap-4 justify-center">
-                      <NavLink
-                        to={"/"}
+                      <a
+                        href="mailto: kghtetsan26@gmail.com"
                         className="bg-black transition-all duration-150 border hover:border-black hover:bg-white hover:text-black text-white py-2 px-4 rounded"
                       >
-                        Contact Me
-                      </NavLink>
+                        Mail Me
+                      </a>
                       <a
                         href={resume}
                         download={true}
