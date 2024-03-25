@@ -46,7 +46,7 @@ export const IntroBio = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+                <FaGithub className="text-3xl transition duration-200 hover:text-black cursor-pointer" />
               </a>
               <a
                 href="https://www.linkedin.com/in/kaung-htet-san-07034b218/"

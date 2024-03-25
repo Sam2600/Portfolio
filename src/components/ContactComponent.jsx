@@ -17,7 +17,7 @@ const ContactComponent = ({ children }) => {
             as="li"
             variant="small"
             color="blue-gray"
-            className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 font-medium"
+            className="flex items-center text-black hover:underline cursor-pointer gap-x-2 font-medium"
           >
             {children}
           </Typography>

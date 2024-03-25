@@ -45,7 +45,7 @@ export const NavbarComponent = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium "
+        className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium "
       >
         <NavLink to={"/"} className="flex items-center">
           <FaHome className="text-xl mx-1" />
@@ -66,7 +66,7 @@ export const NavbarComponent = () => {
           variant="small"
           color="blue-gray"
           onClick={toProjectsScrollHandler}
-          className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
+          className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
         >
           <FaProjectDiagram className="text-xl" />
           <p className="flex items-center textbl">Projects</p>
@@ -77,7 +77,7 @@ export const NavbarComponent = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center text-black hover:text-slate-500 cursor-pointer gap-x-2 p-1 font-medium"
+        className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
       >
         <NavLink to={"/about-me"} className="flex items-center">
           <HiUserCircle className="text-xl cursor-pointer mx-1" />
@@ -93,7 +93,7 @@ export const NavbarComponent = () => {
         <NavLink
           to={"/"}
           onClick={nameClickHandler}
-          className="mr-4 cursor-pointer text-black transition hover:text-slate-500 text-2xl font-semibold"
+          className="mr-4 cursor-pointer text-black transition hover:underline text-2xl font-semibold"
         >
           Kaung Htet San
         </NavLink>
