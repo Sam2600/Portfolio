@@ -32,10 +32,10 @@ export const IntroBio = () => {
             techs and join innovative teams.
           </p>
 
-          <div class="py-3 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
+          <div className="py-3 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
             <div className="flex justify-center gap-10">
               <a
-                href="https://www.google.com/search?client=firefox-b-d&q=facebook"
+                href="https://www.facebook.com/kghtetsan2600"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -48,7 +48,13 @@ export const IntroBio = () => {
               >
                 <FaGithub className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
               </a>
-              <FaLinkedin className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+              <a
+                href="https://www.linkedin.com/in/kaung-htet-san-07034b218/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>

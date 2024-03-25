@@ -7,16 +7,16 @@ import burmaMeal from "../assets/BurmaMeal.png";
 export const Projects = () => {
   return (
     <section className="py-5">
-      <div class="container max-w-screen-xl mx-auto px-4">
+      <div className="container max-w-screen-xl mx-auto px-4">
         <h1
           id="my-project"
-          class="inline-block mx-5 pb-3 mb-10 text-3xl font-semibold text-gray-900 capitalize border-b-4 border-slate-500"
+          className="inline-block mx-5 pb-3 mb-10 text-3xl font-semibold text-gray-900 capitalize border-b-4 border-slate-500"
         >
           My projects
         </h1>
         <div className="flex flex-col sm:flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-wrap gap-5">
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
-            <div class="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
+            <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
                 href="https://movie-nerd-sam2600.vercel.app/"
                 target="_blank"
@@ -25,11 +25,11 @@ export const Projects = () => {
                 <img className="border h-72 w-full" src={movieNerds} alt="" />
               </a>
 
-              <h4 class="mt-3 text-lg mb-4 text-black font-bold">
+              <h4 className="mt-3 text-lg mb-4 text-black font-bold">
                 Movie Nerds
               </h4>
 
-              <p class="font-normal text-gray-500 text-md">
+              <p className="font-normal text-gray-500 text-md">
                 A website with variety of movies categories and specific details
                 with decent descriptions, rating and recommendations.
                 <br />
@@ -41,12 +41,12 @@ export const Projects = () => {
                 <a
                   href="https://movie-nerd-sam2600.vercel.app/"
                   target="_blank"
-                  class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
+                  className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
                   Live Demo
                   <span
                     aria-hidden="true"
-                    class="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                    className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
                   >
                     →
                   </span>
@@ -54,13 +54,13 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Sam2600/Movie-Nerd-with-React"
                   target="_blank"
-                  class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
+                  className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
                   Source code
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 496 512"
                     height="1em"
                     width="1em"
@@ -73,7 +73,7 @@ export const Projects = () => {
             </div>
           </div>
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
-            <div class="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
+            <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
                 href="https://estilo-vivo.vercel.app/"
                 target="_blank"
@@ -82,11 +82,11 @@ export const Projects = () => {
                 <img className="border h-72 w-full" src={shopping} alt="" />
               </a>
 
-              <h4 class="mt-3 text-lg mb-4 text-black font-bold">
+              <h4 className="mt-3 text-lg mb-4 text-black font-bold">
                 Estilo Vivo
               </h4>
 
-              <p class="font-normal text-gray-500 text-md">
+              <p className="font-normal text-gray-500 text-md">
                 A shopping website with decent prices and variety of categories.
                 Best choice to find your needs.
                 <br />
@@ -98,12 +98,12 @@ export const Projects = () => {
                 <a
                   href="https://estilo-vivo.vercel.app/"
                   target="_blank"
-                  class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
+                  className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
                   Live Demo
                   <span
                     aria-hidden="true"
-                    class="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                    className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
                   >
                     →
                   </span>
@@ -111,13 +111,13 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Sam2600/Shopping-Cart-with-React"
                   target="_blank"
-                  class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
+                  className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
                   Source code
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 496 512"
                     height="1em"
                     width="1em"
@@ -130,7 +130,7 @@ export const Projects = () => {
             </div>
           </div>
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
-            <div class="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
+            <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
                 href="https://burmese-meal.vercel.app/"
                 target="_blank"
@@ -139,9 +139,11 @@ export const Projects = () => {
                 <img className="border h-72 w-full" src={burmaMeal} alt="" />
               </a>
 
-              <h4 class="mt-3 text-lg mb-4 text-black font-bold">Burma Meal</h4>
+              <h4 className="mt-3 text-lg mb-4 text-black font-bold">
+                Burma Meal
+              </h4>
 
-              <p class="font-normal text-gray-500 text-md">
+              <p className="font-normal text-gray-500 text-md">
                 A website to show how burmese foods and curries are so
                 delicious.
                 <br />
@@ -153,12 +155,12 @@ export const Projects = () => {
                 <a
                   href="https://burmese-meal.vercel.app/"
                   target="_blank"
-                  class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
+                  className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
                   Live Demo
                   <span
                     aria-hidden="true"
-                    class="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                    className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
                   >
                     →
                   </span>
@@ -166,13 +168,13 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Sam2600/burmese-meal"
                   target="_blank"
-                  class="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
+                  className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
                   Source code
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 496 512"
                     height="1em"
                     width="1em"
@@ -187,12 +189,12 @@ export const Projects = () => {
         </div>
       </div>
 
-      <div class=" mt-20 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
+      <div className=" mt-20 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
         <div className="flex justify-center gap-10">
-          <FaReact className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />
-          <FaLaravel className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
-          <FaDocker className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
-          <FaDatabase className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+          <FaReact className="text-3xl transition-all duration-200 hover:text-blue-600" />
+          <FaLaravel className="text-3xl transition duration-200 hover:text-red-600" />
+          <FaDocker className="text-3xl transition duration-200 hover:text-blue-600" />
+          <FaDatabase className="text-3xl transition duration-200 hover:text-black" />
         </div>
       </div>
     </section>

@@ -2,6 +2,9 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import sam from "../assets/samprofile.jpg";
 import resume from "../assets/KaungHtetSan-Resume.pdf";
+import bcmm from "../assets/bcmm.jpg";
+import survey from "../assets/Survey-modified.png";
+import wunzin from "../assets/wunzin.png";
 import {
   FaLaravel,
   FaReact,
@@ -10,9 +13,6 @@ import {
   FaDocker,
   FaHtml5,
   FaCss3,
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
 } from "react-icons/fa";
 
 export const AboutMe = () => {
@@ -56,13 +56,13 @@ export const AboutMe = () => {
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="1.5"
+                            strokeWidth="1.5"
                             stroke="currentColor"
-                            class="w-5 h-5"
+                            className="w-5 h-5"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
                             />
                           </svg>
@@ -109,100 +109,106 @@ export const AboutMe = () => {
               </div>
               <div className="col-span-4 sm:col-span-9">
                 <div className="bg-white shadow rounded-lg p-6">
-                  <h2 className="text-xl font-bold mb-4">About Me</h2>
-                  <p className="text-gray-700">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    finibus est vitae tortor ullamcorper, ut vestibulum velit
-                    convallis. Aenean posuere risus non velit egestas suscipit.
-                    Nunc finibus vel ante id euismod. Vestibulum ante ipsum
-                    primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Aliquam erat volutpat. Nulla vulputate pharetra
-                    tellus, in luctus risus rhoncus id.
-                  </p>
-
-                  <h3 className="font-semibold text-center my-8 mb-3">
-                    Find Me On
-                  </h3>
-
-                  <div class="py-3 flex items-center text-xs text-black uppercase before:flex-[1_1_0%] before:border-t before:border-black before:me-6 after:flex-[1_1_0%] after:border-t after:border-black after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">
-                    <div className="flex justify-center gap-10">
-                      <a
-                        href="https://www.google.com/search?client=firefox-b-d&q=facebook"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaFacebook className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />
-                      </a>
-                      <a
-                        href="https://github.com/Sam2600"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaGithub className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
-                      </a>
-                      <FaLinkedin className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
-                    </div>
+                  <div>
+                    <h2 className="text-xl font-bold mb-4">About Me</h2>
+                    <p className="text-gray-700 text-md">
+                      Junior web developer at Brycen Myanmar, exploring new
+                      technologies and innovative web development experiences.
+                      <br />
+                      <br />
+                      Proficient in Laravel, React, Git, GitLab and Github as
+                      well as docker. Eager in collaborative environments, adopt
+                      new tools, technologies, and frameworks.
+                      <br />
+                      <br />
+                      Currently seeking opportunities to challenge myself,
+                      contribute to innovative projects, and want level up
+                      myself as a developer within a dynamic team.
+                    </p>
                   </div>
 
-                  <h1 class=" text-center pb-3 my-10 text-3xl font-semibold text-gray-900 ">
-                    My Entire Career Experiences
-                  </h1>
-                  <div className="my-5 space-y-5 rounded">
-                    <article class="p-4 space-y-5 transition bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
+                  <hr className="font-bold mt-10 uppercase" />
+
+                  <div className="my-10 space-y-5 rounded">
+                    <h1 className="text-2xl font-semibold text-gray-900 ">
+                      My Entire Career Experiences
+                    </h1>
+                    <article className="p-4 space-y-5 transition bg-white border border-gray-400 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
                       <div className="flex justify-between flex-wrap gap-2 w-full">
                         <span className="text-gray-700 font-bold">
-                          Web Developer
+                          Junior Web Developer
                         </span>
                         <p>
-                          <span className="text-gray-700 mr-2">
-                            at ABC Company
+                          <span className="text-gray-700 font-semibold mr-2 flex items-center gap-2">
+                            Brycen Myanmar{" "}
+                            <img src={bcmm} width={30} height={30} alt="" />
                           </span>
-                          <span className="text-gray-700">2017 - 2019</span>
                         </p>
                       </div>
+                      <span className="text-gray-700">2023-July - Present</span>
                       <p className="mt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed finibus est vitae tortor ullamcorper, ut vestibulum
-                        velit convallis. Aenean posuere risus non velit egestas
-                        suscipit.
+                        After accomplishing my internship, I started my official{" "}
+                        web developer career at Brycen Myanmar.
                       </p>
                     </article>
-                    <article class="p-4 space-y-5 transition bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
+                    <article className="p-4 space-y-5 transition bg-white border border-gray-400 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
                       <div className="flex justify-between flex-wrap gap-2 w-full">
                         <span className="text-gray-700 font-bold">
-                          Web Developer
+                          Internship Trainee
                         </span>
                         <p>
-                          <span className="text-gray-700 mr-2">
-                            at ABC Company
+                          <span className="text-gray-700 font-semibold mr-2 flex items-center gap-2">
+                            Brycen Myanmar{" "}
+                            <img src={bcmm} width={30} height={30} alt="" />
                           </span>
-                          <span className="text-gray-700">2017 - 2019</span>
                         </p>
                       </div>
+                      <span className="text-gray-700">
+                        2023-May - 2023-July
+                      </span>
                       <p className="mt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed finibus est vitae tortor ullamcorper, ut vestibulum
-                        velit convallis. Aenean posuere risus non velit egestas
-                        suscipit.
+                        I started my web development career in Brycen Myanmar IT
+                        solution company.
                       </p>
                     </article>
-                    <article class="p-4 space-y-5 transition bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
+                    <article className="p-4 space-y-5 transition bg-white border border-gray-400 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
                       <div className="flex justify-between flex-wrap gap-2 w-full">
                         <span className="text-gray-700 font-bold">
-                          Web Developer
+                          Junior Servey Engineer
                         </span>
                         <p>
-                          <span className="text-gray-700 mr-2">
-                            at ABC Company
+                          <span className="text-gray-700 font-semibold mr-2 flex items-center gap-2">
+                            Myint Marr Aung
+                            <img src={survey} width={30} height={30} alt="" />
                           </span>
-                          <span className="text-gray-700">2017 - 2019</span>
                         </p>
                       </div>
+                      <span className="text-gray-700">
+                        2022-April - 2022-December
+                      </span>
                       <p className="mt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed finibus est vitae tortor ullamcorper, ut vestibulum
-                        velit convallis. Aenean posuere risus non velit egestas
-                        suscipit.
+                        I worked as a survey engineer in Myint Marr Aung
+                        construction company in 2022.
+                      </p>
+                    </article>
+                    <article className="p-4 space-y-5 transition bg-white border border-gray-400 rounded-lg shadow-sm hover:shadow-lg sm:p-6">
+                      <div className="flex justify-between flex-wrap gap-2 w-full">
+                        <span className="text-gray-700 font-bold">
+                          Translator
+                        </span>
+                        <p>
+                          <span className="text-gray-700 font-semibold mr-2 flex items-center gap-2">
+                            Wun Zin
+                            <img src={wunzin} width={30} height={30} alt="" />
+                          </span>
+                        </p>
+                      </div>
+                      <span className="text-gray-700">
+                        2019-December - 2020-May
+                      </span>
+                      <p className="mt-2">
+                        Being part time novel translator for 6 months at Wun Zin
+                        Online Book store while attending university.
                       </p>
                     </article>
                   </div>

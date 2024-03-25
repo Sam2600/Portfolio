@@ -35,7 +35,7 @@ const ContactComponent = ({ children }) => {
             </a>
             <hr />
             <a
-              href="https://www.google.com/search?client=firefox-b-d&q=facebook"
+              href="https://www.facebook.com/kghtetsan2600"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 justify-start hover:text-blue-600 cursor-pointer"
@@ -55,7 +55,7 @@ const ContactComponent = ({ children }) => {
             </a>
             <hr />
             <a
-              href="https://github.com/Sam2600"
+              href="https://www.linkedin.com/in/kaung-htet-san-07034b218/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 justify-start hover:text-blue-600 cursor-pointer"
