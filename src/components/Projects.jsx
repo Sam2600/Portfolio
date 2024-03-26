@@ -75,7 +75,7 @@ export const Projects = () => {
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
             <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
-                href="https://estilo-vivo.vercel.app/"
+                href="https://sam-shoppie.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -83,7 +83,7 @@ export const Projects = () => {
               </a>
 
               <h4 className="mt-3 text-lg mb-4 text-black font-bold">
-                Estilo Vivo
+                Shoppie
               </h4>
 
               <p className="font-normal text-gray-500 text-md">
