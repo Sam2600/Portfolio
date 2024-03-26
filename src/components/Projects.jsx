@@ -39,7 +39,7 @@ export const Projects = () => {
               </p>
               <div className="flex items-center justify-between">
                 <a
-                  href="https://movie-nerd-sam2600.vercel.app/"
+                  href="https://movie-nerds.vercel.app/"
                   target="_blank"
                   className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
