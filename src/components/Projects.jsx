@@ -1,5 +1,5 @@
 import React from "react";
-import movieNerds from "../assets/movie-nerds.png";
+import movieNerds from "../assets/movieNerds.png";
 import shopping from "../assets/Shopping.png";
 import { FaReact, FaLaravel, FaDatabase, FaDocker } from "react-icons/fa";
 import burmaMeal from "../assets/BurmaMeal.png";
@@ -18,7 +18,7 @@ export const Projects = () => {
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
             <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
-                href="https://movie-nerd-sam2600.vercel.app/"
+                href="https://movie-nerds.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
