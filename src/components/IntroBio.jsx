@@ -39,21 +39,21 @@ export const IntroBio = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaFacebook className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />
+                <FaFacebook className="text-3xl text-gray-700 transition-all duration-200 hover:text-blue-600 cursor-pointer" />
               </a>
               <a
                 href="https://github.com/Sam2600"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub className="text-3xl transition duration-200 hover:text-black cursor-pointer" />
+                <FaGithub className="text-3xl text-gray-700 transition duration-200 hover:text-black cursor-pointer" />
               </a>
               <a
                 href="https://www.linkedin.com/in/kaung-htet-san-07034b218/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedin className="text-3xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+                <FaLinkedin className="text-3xl text-gray-700 transition duration-200 hover:text-blue-600 cursor-pointer" />
               </a>
             </div>
           </div>

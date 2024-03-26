@@ -50,7 +50,7 @@ export const AboutMe = () => {
                   <a
                     href={resume}
                     download={true}
-                    className="bg-gray-300 transition-all duration-150 hover:text-white hover:bg-gray-400 text-gray-700 py-2 px-4 rounded"
+                    className="bg-white transition-all duration-150 border border-black hover:bg-black hover:text-white text-black py-2 px-4 rounded"
                   >
                     <div className="flex items-center justify-evenly gap-1">
                       Resume
