@@ -191,7 +191,7 @@ export const Projects = () => {
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
             <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
-                href="http://18.136.193.8/admins/login"
+                href="http://54.179.146.62/admins/login"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -207,12 +207,12 @@ export const Projects = () => {
                 documentations instructions.
                 <br />
                 <br />
-                Hosted in AWS and tech stacks are Laravel and its necessary
-                packages like Mattwebsite, DomPdf and so on.
+                Hosted in AWS with EC2, RDS services and tech stacks are Laravel
+                with JQuery and packages like Mattwebsite, DomPdf and so on.
               </p>
               <div className="flex items-center justify-between">
                 <a
-                  href="http://18.136.193.8/admins/login"
+                  href="http://54.179.146.62/admins/login"
                   target="_blank"
                   className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
