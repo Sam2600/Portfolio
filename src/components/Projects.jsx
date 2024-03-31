@@ -191,7 +191,7 @@ export const Projects = () => {
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
             <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
-                href="http://54.179.146.62/admins/login"
+                href="http://54.179.50.220/admins/login"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -212,7 +212,7 @@ export const Projects = () => {
               </p>
               <div className="flex items-center justify-between">
                 <a
-                  href="http://54.179.146.62/admins/login"
+                  href="http://54.179.50.220/admins/login"
                   target="_blank"
                   className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500"
                 >
