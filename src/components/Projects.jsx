@@ -249,7 +249,7 @@ export const Projects = () => {
           <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
             <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
               <a
-                href="https://shoppie-seven.vercel.app/"
+                href="https://sam-yaycha.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
