@@ -8,7 +8,7 @@ import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiDeviceMobile } from "react-icons/hi";
 
-const ContactComponent = ({ children }) => {
+const Contact = ({ children }) => {
   return (
     <>
       <Popover placement="top">
@@ -70,4 +70,4 @@ const ContactComponent = ({ children }) => {
   );
 };
 
-export default ContactComponent;
+export default Contact;

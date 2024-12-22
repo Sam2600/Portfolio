@@ -1,18 +1,17 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
 
 import { FaHome, FaPhone, FaProjectDiagram } from "react-icons/fa";
 
 import { HiUserCircle } from "react-icons/hi";
-import { NavLink, useLocation } from "react-router-dom";
-import ContactComponent from "./ContactComponent";
+import { NavLink } from "react-router-dom";
 
-export const NavbarComponent = () => {
+export const NavigationBar = () => {
   //
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -23,14 +22,6 @@ export const NavbarComponent = () => {
       behavior: "smooth",
     });
   };
-
-  const toProjectsScrollHandler = () => {
-    document
-      .getElementById("my-project")
-      .scrollIntoView({ top: 0, behavior: "smooth" });
-  };
-
-  const location = useLocation().pathname;
 
   React.useEffect(() => {
     window.addEventListener(
@@ -47,31 +38,32 @@ export const NavbarComponent = () => {
         color="blue-gray"
         className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium "
       >
-        <NavLink to={"/"} className="flex items-center">
-          <FaHome className="text-xl mx-1" />
+        <NavLink to={"/"} className="flex items-center gap-x-1">
+          <FaHome className="text-xl" />
           Home
         </NavLink>
       </Typography>
-
-      <ContactComponent>
-        <button className="flex items-center">
-          <FaPhone className="text-xl mx-1" />
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="flex items-center text-black hover:underline cursor-pointer p-1 font-medium "
+      >
+        <NavLink to={"/contact-me"} className="flex items-center gap-x-1">
+          <FaPhone className="text-xl" />
           Contact
-        </button>
-      </ContactComponent>
-
-      {location !== "/about-me" && (
-        <Typography
-          as="li"
-          variant="small"
-          color="blue-gray"
-          onClick={toProjectsScrollHandler}
-          className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
-        >
+        </NavLink>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
+      >
+        <NavLink to={"/projects"} className="flex items-center gap-x-2">
           <FaProjectDiagram className="text-xl" />
           <p className="flex items-center textbl">Projects</p>
-        </Typography>
-      )}
+        </NavLink>
+      </Typography>
 
       <Typography
         as="li"
@@ -79,8 +71,8 @@ export const NavbarComponent = () => {
         color="blue-gray"
         className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
       >
-        <NavLink to={"/about-me"} className="flex items-center">
-          <HiUserCircle className="text-xl cursor-pointer mx-1" />
+        <NavLink to={"/about-me"} className="flex items-center gap-x-1">
+          <HiUserCircle className="text-xl cursor-pointer" />
           About me
         </NavLink>
       </Typography>
@@ -88,12 +80,12 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="w-full py-5 px-10 border-b-slate-400 bg-white shadow-none sticky top-0 z-auto">
+    <Navbar className="w-full rounded-none py-5 px-10 border-b-gray-500 bg-white shadow-none sticky top-0 z-auto">
       <div className="container mx-auto flex flex-wrap items-center justify-between text-blue-gray-900">
         <NavLink
           to={"/"}
           onClick={nameClickHandler}
-          className="mr-4 cursor-pointer text-black transition hover:underline text-2xl font-semibold"
+          className="cursor-pointer text-black transition hover:underline text-2xl font-semibold"
         >
           Kaung Htet San
         </NavLink>
@@ -136,9 +128,9 @@ export const NavbarComponent = () => {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto">{navList}</div>
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 };

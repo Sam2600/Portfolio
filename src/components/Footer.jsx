@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import ContactComponent from "../components/ContactComponent";
+import Contact from "./Contact";
 
-export const FooterComponent = () => {
+export const Footer = () => {
   //
   const location = useLocation().pathname;
 
@@ -25,11 +25,11 @@ export const FooterComponent = () => {
             </NavLink>
           </div>
           <div className="px-5 py-2">
-            <ContactComponent>
+            <Contact>
               <button className="text-base hover:underline leading-6 text-gray-600 hover:text-gray-900">
                 Contact
               </button>
-            </ContactComponent>
+            </Contact>
           </div>
           {location !== "/about-me" && (
             <div className="px-5 py-2">

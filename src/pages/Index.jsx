@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { NavbarComponent } from "../components/NavbarComponent";
-import { FooterComponent } from "../components/FooterComponent";
+import { NavigationBar } from "../components/NavigationBar";
+import { Footer } from "../components/Footer";
 
 export const Index = () => {
   return (
     <main>
-      <NavbarComponent />
+      <NavigationBar />
       <Outlet />
-      <FooterComponent />
+      <Footer />
     </main>
   );
 };
