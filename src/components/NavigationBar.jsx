@@ -61,7 +61,7 @@ export const NavigationBar = () => {
       >
         <NavLink to={"/projects"} className="flex items-center gap-x-2">
           <FaProjectDiagram className="text-xl" />
-          <p className="flex items-center textbl">Projects</p>
+          Projects
         </NavLink>
       </Typography>
 
@@ -72,7 +72,7 @@ export const NavigationBar = () => {
         className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
       >
         <NavLink to={"/about-me"} className="flex items-center gap-x-1">
-          <HiUserCircle className="text-xl cursor-pointer" />
+          <HiUserCircle className="text-xl" />
           About me
         </NavLink>
       </Typography>
@@ -80,7 +80,7 @@ export const NavigationBar = () => {
   );
 
   return (
-    <Navbar className="w-full rounded-none py-5 px-10 border-b-gray-500 bg-white shadow-none sticky top-0 z-auto">
+    <Navbar className="w-full rounded-none py-5 px-4 md:px-10 lg:px-10 border-b-gray-500 bg-white shadow-none sticky top-0 z-auto">
       <div className="container mx-auto flex flex-wrap items-center justify-between text-blue-gray-900">
         <NavLink
           to={"/"}
@@ -92,7 +92,7 @@ export const NavigationBar = () => {
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto mb-4 h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >

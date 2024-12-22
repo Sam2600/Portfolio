@@ -13,6 +13,7 @@ import {
   FaDocker,
   FaHtml5,
   FaCss3,
+  FaAws,
 } from "react-icons/fa";
 
 export const AboutMe = () => {
@@ -36,7 +37,7 @@ export const AboutMe = () => {
               <div className="flex flex-col items-center">
                 <img
                   src={sam}
-                  className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
+                  className="object-cover object-center rounded-full w-32 h-32 shadow-lg border border-gray-800 p-1"
                 ></img>
                 <h1 className="text-xl font-bold">Kaung Htet San</h1>
                 <p className="text-gray-700">Full Stack Developer</p>
@@ -95,6 +96,10 @@ export const AboutMe = () => {
                   </li>
                   <hr />
                   <li className="my-2 flex items-center justify-between">
+                    Aws <FaAws className="text-2xl" />
+                  </li>
+                  <hr />
+                  <li className="my-2 flex items-center justify-between">
                     Docker <FaDocker className="text-2xl" />
                   </li>
                   <hr />
@@ -118,9 +123,10 @@ export const AboutMe = () => {
                   technologies and innovative web development experiences.
                   <br />
                   <br />
-                  Proficient in Laravel, React, Git, GitLab and Github as well
-                  as docker. Eager in collaborative environments, adopt new
-                  tools, technologies, and frameworks.
+                  Proficient in <b>Laravel</b>, <b>React</b>, <b>Git</b> as well
+                  as <b>Docker</b> and <b>AWS services</b>. Eager in
+                  collaborative environments, adopt new tools, technologies, and
+                  frameworks.
                   <br />
                   <br />
                   Currently seeking opportunities to challenge myself,
@@ -129,7 +135,7 @@ export const AboutMe = () => {
                 </p>
               </div>
 
-              <hr className="font-bold mt-10 uppercase" />
+              <hr className="mt-10 border-black" />
 
               <div className="my-10 space-y-5 rounded">
                 <h1 className="text-2xl font-semibold text-gray-900 ">
