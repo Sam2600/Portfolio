@@ -6,10 +6,11 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 
-import { FaHome, FaPhone, FaProjectDiagram } from "react-icons/fa";
+import { FaHome, FaCode, FaPhone, FaLaptopCode } from "react-icons/fa";
 
 import { HiUserCircle } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
+import { NaviLink } from "./NaviLink";
 
 export const NavigationBar = () => {
   //
@@ -32,55 +33,26 @@ export const NavigationBar = () => {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium "
-      >
-        <NavLink to={"/"} className="flex items-center gap-x-1">
-          <FaHome className="text-xl" />
-          Home
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="flex items-center text-black hover:underline cursor-pointer p-1 font-medium "
-      >
-        <NavLink to={"/contact-me"} className="flex items-center gap-x-1">
-          <FaPhone className="text-xl" />
-          Contact
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
-      >
-        <NavLink to={"/projects"} className="flex items-center gap-x-2">
-          <FaProjectDiagram className="text-xl" />
-          Projects
-        </NavLink>
-      </Typography>
-
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="flex items-center text-black hover:underline cursor-pointer gap-x-2 p-1 font-medium"
-      >
-        <NavLink to={"/about-me"} className="flex items-center gap-x-1">
-          <HiUserCircle className="text-xl" />
-          About me
-        </NavLink>
-      </Typography>
+      <NaviLink to={"/"} link_name="Home">
+        <FaHome className="text-xl" />
+      </NaviLink>
+      <NaviLink to={"/realworld-projects"} link_name="Work Experience">
+        <FaCode className="text-xl" />
+      </NaviLink>
+      <NaviLink to={"/contact-me"} link_name="Contact">
+        <FaPhone className="text-xl" />
+      </NaviLink>
+      {/* <NaviLink to={"/projects"} link_name="My projects">
+        <FaLaptopCode className="text-xl" />
+      </NaviLink> */}
+      <NaviLink to={"/about-me"} link_name="About me">
+        <HiUserCircle className="text-xl" />
+      </NaviLink>
     </ul>
   );
 
   return (
-    <Navbar className="w-full rounded-none py-5 px-4 md:px-10 lg:px-10 border-b-gray-500 bg-white shadow-none sticky top-0 z-auto">
+    <Navbar className="w-full rounded-none py-5 px-4 md:px-10 lg:px-10 border-b-gray-500 bg-white shadow-none sticky top-0 z-50">
       <div className="container mx-auto flex flex-wrap items-center justify-between text-blue-gray-900">
         <NavLink
           to={"/"}
@@ -92,7 +64,7 @@ export const NavigationBar = () => {
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
-          className="ml-auto mb-4 h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import movieNerds from "../assets/movieNerds.png";
 import shopping from "../assets/Shopping.png";
 import shifthub from "../assets/Shifthub.png";
@@ -8,6 +8,10 @@ import burmaMeal from "../assets/BurmaMeal.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Projects = () => {
+  //
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.section
       className="py-5"
@@ -19,7 +23,7 @@ export const Projects = () => {
     >
       <AnimatePresence>
         <div className="container max-w-screen-xl mx-auto px-4">
-        <div className="flex flex-col sm:flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-wrap gap-5">
+          <div className="flex flex-col sm:flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-wrap gap-5">
             <div className="w-full md:w-5/12 lg:w-5/12 md:mx-auto">
               <div className="bg-gray-50 p-8 rounded-md shadow-sm border cursor-pointer hover:shadow-lg">
                 <a

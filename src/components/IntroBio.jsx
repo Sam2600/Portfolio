@@ -14,7 +14,7 @@ export const IntroBio = () => {
       exit={{ opacity: 0 }}
     >
       <div className="container max-w-screen-xl mx-auto px-4">
-        <div className="text-center">
+        <div className="flex flex-col gap-y-3 text-center">
           <div className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
             <img
               className="object-cover object-center rounded-full h-60 w-60 shadow-lg border-2 border-gray-800 p-2"
@@ -23,7 +23,7 @@ export const IntroBio = () => {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-y-3">
             <h1 className="font-normal text-gray-900 text-4xl leading-none mb-8">
               <TypeAnimation
                 sequence={[
@@ -42,9 +42,11 @@ export const IntroBio = () => {
             <p className="font-normal text-gray-800 text-center text-md md:text-xl mb-14">
               <code>$goodAt = </code>
               <code>
+                [
                 <span className="font-semibold text-gray-900">
-                  [cloud computing, object-oriented, functional programming];
+                  cloud computing, object-oriented, functional programming
                 </span>
+                ];
               </code>
               <br /> <br />
               Passionate about exploring new technologies and contributing to
