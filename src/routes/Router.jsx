@@ -4,7 +4,6 @@ import { Index } from "../pages/Index";
 import { AboutMe } from "../pages/AboutMe";
 import { ContactMe } from "../pages/ContactMe";
 import { Projects } from "../pages/Projects";
-import { RealWoldExpereince } from "../pages/RealWoldExpereince";
 
 export const Router = createBrowserRouter([
   {
@@ -26,10 +25,6 @@ export const Router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
-      },
-      {
-        path: "/realworld-projects",
-        element: <RealWoldExpereince />,
       },
     ],
   },

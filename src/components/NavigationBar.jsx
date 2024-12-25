@@ -36,7 +36,7 @@ export const NavigationBar = () => {
       <NaviLink to={"/"} link_name="Home">
         <FaHome className="text-xl" />
       </NaviLink>
-      <NaviLink to={"/realworld-projects"} link_name="Work Experience">
+      <NaviLink to={"/projects"} link_name="Projects">
         <FaCode className="text-xl" />
       </NaviLink>
       <NaviLink to={"/contact-me"} link_name="Contact">
