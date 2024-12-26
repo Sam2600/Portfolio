@@ -1,12 +1,41 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiDeviceMobile } from "react-icons/hi";
+import emailjs from "@emailjs/browser";
+import { Alert } from "@material-tailwind/react";
+import { useEffect } from "react";
 
 export const ContactMe = () => {
+  //
+  const form = useRef();
+
+  const [success, setSuccess] = useState(true);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          setSuccess(!success);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="container my-12 mx-auto px-4 md:px-4">
-      <div className="flex justify-start">
+      <div className="flex flex-wrap justify-between">
         <div className="text-center md:max-w-xl lg:max-w-3xl">
           <h1
             id="my-project"
@@ -19,6 +48,8 @@ export const ContactMe = () => {
       <div className="flex flex-wrap">
         <AnimatePresence>
           <motion.form
+            ref={form}
+            onSubmit={sendEmail}
             className="py-5 mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
             initial={{ opacity: 0, x: "-10vw" }}
             animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
@@ -32,6 +63,7 @@ export const ContactMe = () => {
                 Name
               </label>
               <input
+                name="from_name"
                 type="text"
                 className="px-2 py-2 border w-full outline-none rounded-md border-black"
                 id="exampleInput90"
@@ -48,6 +80,7 @@ export const ContactMe = () => {
               </label>
               <input
                 type="email"
+                name="from_email"
                 className="px-2 py-2 border w-full outline-none rounded-md border-black"
                 id="exampleInput90"
                 placeholder="Enter your email address"
@@ -63,13 +96,14 @@ export const ContactMe = () => {
               </label>
               <textarea
                 className="px-2 py-2 border rounded-[5px] w-full outline-none border-black"
-                name=""
+                name="message"
                 id=""
               ></textarea>
             </div>
 
             <button
-              type="button"
+              type="submit"
+              value="Send"
               className="mb-6 mt-5 inline-block w-full rounded bg-gray-800 px-6 py-2.5 font-medium uppercase leading-normal text-white border border-transparent hover:shadow-md hover:bg-white hover:border-gray-800 hover:text-gray-800"
             >
               Send
@@ -89,7 +123,7 @@ export const ContactMe = () => {
                 <div className="flex items-start">
                   <div className="shrink-0">
                     <div className="inline-block rounded-md bg-teal-400-100 p-4 text-gray-800">
-                      <HiDeviceMobile className="text-3xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />{" "}
+                      <HiDeviceMobile className="text-3xl transition-all duration-200" />{" "}
                     </div>
                   </div>
                   <div className="ml-6 grow">
@@ -100,7 +134,7 @@ export const ContactMe = () => {
                       rel="noreferrer"
                       className="flex items-center gap-3 justify-start cursor-pointer"
                     >
-                      <p className="text-neutral-500 hover:text-blue-600">
+                      <p className="text-neutral-500 hover:text-gray-950 hover:underline">
                         +959 797-509-484
                       </p>
                     </a>
@@ -111,7 +145,7 @@ export const ContactMe = () => {
                 <div className="flex items-start">
                   <div className="shrink-0">
                     <div className="inline-block rounded-md bg-teal-400-100 p-4 text-gray-800">
-                      <FaFacebook className="text-2xl transition-all duration-200 hover:text-blue-600 cursor-pointer" />{" "}
+                      <FaFacebook className="text-2xl transition-all duration-200" />{" "}
                     </div>
                   </div>
                   <div className="ml-6 grow">
@@ -120,9 +154,9 @@ export const ContactMe = () => {
                       href="https://www.facebook.com/kghtetsan2600"
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-3 justify-start hover:text-blue-600 cursor-pointer"
+                      className="flex items-center gap-3 justify-start cursor-pointer"
                     >
-                      <p className="text-neutral-500 hover:text-blue-600">
+                      <p className="text-neutral-500 hover:text-gray-950 hover:underline">
                         Sam2600@Facebook
                       </p>
                     </a>
@@ -133,7 +167,7 @@ export const ContactMe = () => {
                 <div className="align-start flex">
                   <div className="shrink-0">
                     <div className="inline-block rounded-md bg-teal-400-100 p-4 text-gray-800">
-                      <FaGithub className="text-2xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+                      <FaGithub className="text-2xl transition duration-200" />
                     </div>
                   </div>
                   <div className="ml-6 grow">
@@ -142,9 +176,9 @@ export const ContactMe = () => {
                       href="https://github.com/Sam2600"
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-3 justify-start hover:text-blue-600 cursor-pointer"
+                      className="flex items-center gap-3 justify-start  cursor-pointer"
                     >
-                      <p className="text-neutral-500 hover:text-blue-600">
+                      <p className="text-neutral-500 hover:text-gray-950 hover:underline">
                         Sam2600@Github
                       </p>
                     </a>
@@ -155,7 +189,7 @@ export const ContactMe = () => {
                 <div className="align-start flex">
                   <div className="shrink-0">
                     <div className="inline-block rounded-md bg-teal-400-100 p-4 text-gray-800">
-                      <FaLinkedin className="text-2xl transition duration-200 hover:text-blue-600 cursor-pointer" />
+                      <FaLinkedin className="text-2xl transition duration-200" />
                     </div>
                   </div>
                   <div className="ml-6 grow">
@@ -166,7 +200,7 @@ export const ContactMe = () => {
                       rel="noreferrer"
                       className="flex items-center gap-3 justify-start cursor-pointer"
                     >
-                      <p className="text-neutral-500 hover:text-blue-600 ">
+                      <p className="text-neutral-500 hover:text-gray-950 hover:underline">
                         Sam2600@linkedin
                       </p>
                     </a>
