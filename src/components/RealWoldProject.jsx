@@ -39,7 +39,7 @@ export const RealWoldProject = ({
           <a href={prj_url} target="_blank" rel="noreferrer">
             <img
               loading="lazy"
-              className="w-full max-w-md lg:max-w-none rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5"
+              className="w-full max-w-md lg:max-w-none shadow-xl rounded-xl border border-gray-800"
               src={img}
               alt=""
               style={{ color: "transparent" }}
