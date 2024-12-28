@@ -36,12 +36,22 @@ export const ContactMe = () => {
           setSuccess(true);
           setLoading(false);
           reset();
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
         },
         (error) => {
           console.log(error);
           setLoading(false);
           setSuccess(false);
           setserverError("Internal Server Error. Please try again later");
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
         }
       );
   };
