@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 
-import yaycha from "../assets/yaycha.png";
 import shopping from "../assets/Shopping.png";
 import shifthub from "../assets/Shifthub.png";
-import burmaMeal from "../assets/BurmaMeal.png";
 import movieNerds from "../assets/movieNerds.png";
 
 import { HiVideoCamera } from "react-icons/hi";
@@ -36,6 +34,30 @@ export const Projects = () => {
   return (
     <div className="relative overflow-hidden pt-16 pb-32 space-y-24">
       <RealWoldProject
+        icon={<BiNetworkChart className="text-4xl" />}
+        pos={"right"}
+        prj_title={"Shifthub"}
+        img={shifthub}
+        prj_url={"http://122.248.230.47/"}
+        about_prj={
+          "A website to manage employees and their assigns with specific documentations instructions."
+        }
+      >
+        <ProjectInfo
+          pos_respon={
+            "Final internship project with Laravel. I was responsible for both front-end and back-end as well as database design."
+          }
+        >
+          <SiLinux className="text-2xl text-black" />
+          <FaAws className="text-2xl text-orange-500" />
+          <SiLaravel className="text-2xl text-red-600" />
+          <SiJquery className="text-2xl text-blue-500" />
+          <SiBootstrap className="text-2xl text-purple-500" />
+          <SiGit className="text-2xl text-orange-500" />
+        </ProjectInfo>
+      </RealWoldProject>
+      
+      <RealWoldProject
         icon={<HiVideoCamera className="text-4xl" />}
         pos={"left"}
         prj_title={"MovieNerds"}
@@ -54,30 +76,6 @@ export const Projects = () => {
           <SiRedux className="text-2xl text-purple-500" />
           <SiReactrouter className="text-2xl text-pink-500" />
           <SiTailwindcss className="text-2xl text-blue-500" />
-          <SiGit className="text-2xl text-orange-500" />
-        </ProjectInfo>
-      </RealWoldProject>
-
-      <RealWoldProject
-        icon={<BiNetworkChart className="text-4xl" />}
-        pos={"right"}
-        prj_title={"Shifthub"}
-        img={shifthub}
-        // prj_url={"#urlHere.."}
-        about_prj={
-          "A website to manage employees and their assigns with specific documentations instructions."
-        }
-      >
-        <ProjectInfo
-          pos_respon={
-            "Final internship project with Laravel. I was responsible for both front-end and back-end as well as database design."
-          }
-        >
-          <SiLinux className="text-2xl text-black" />
-          <FaAws className="text-2xl text-orange-500" />
-          <SiLaravel className="text-2xl text-red-600" />
-          <SiJquery className="text-2xl text-blue-500" />
-          <SiBootstrap className="text-2xl text-purple-500" />
           <SiGit className="text-2xl text-orange-500" />
         </ProjectInfo>
       </RealWoldProject>
